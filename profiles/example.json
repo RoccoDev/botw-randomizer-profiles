@@ -1,0 +1,37 @@
+{
+  "name": "Example profile",
+  "description": "An example profile that will be ignored by the randomizer",
+  "author": "RoccoDev",
+  "items": [
+    "These will appear as features in the randomizer GUI",
+    "You can have as many as you want."
+  ],
+  "lists": {
+    "exampleList": {
+      "This list contains values linked to a probability (%)": 50.0,
+      "The probability must be a floating-point number and the sum of the": 25.0,
+      "probabilities must be equal to 100.0": 25.0
+    },
+    "lynels": {
+      "Enemy_Lynel_Junior": 40.0,
+      "Enemy_Lynel_Middle": 30.0,
+      "Enemy_Lynel_Senior": 20.0,
+      "Enemy_Lynel_Dark": 10.0
+    }
+  },
+  "patches": {
+    "You can enter the path to a file or a #location": {
+      "Then, you can specify the Hash ID of the object you want to patch": {
+        "Then, the dictionary": "This can be a value or a random item from a @list."
+      }
+    },
+    "Map/MainField/A-1/A-1_Dynamic.smubin": {
+      "1287156282": {
+        "UnitConfigName": "DgnObj_DungeonEntrance_Moss"
+      }
+    },
+    "#enemycamps": {
+      "UnitConfigName": "@lynels"
+      "Note": "The #enemycamps location is built into the randomizer itself. It contains a list of all Hash IDs related to overworld enemies."
+    }
+  }
