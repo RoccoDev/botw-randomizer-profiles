@@ -31,7 +31,7 @@
       }
     },
     "#enemycamps": {
-      "UnitConfigName": "@lynels"
+      "UnitConfigName": "@lynels",
       "Note": "The #enemycamps location is built into the randomizer itself. It contains a list of all Hash IDs related to overworld enemies."
     }
   }
